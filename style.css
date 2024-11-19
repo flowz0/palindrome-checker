@@ -1,5 +1,123 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
 body {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
     background-color: #1d2225;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    height: 100vh;
+}
+
+#app {
+    background-color: hsl(203, 10%, 23%);
     color: #d0d9db;
+
+    padding: 4rem 2rem;
+    border-radius: 2rem;
+}
+
+h1 {
+    text-transform: uppercase;
+    letter-spacing: 0.08rem;
+
+    font-size: xx-large;
+}
+
+hr.new {
+    border: 1px solid hsl(203, 10%, 33%);
+    margin-top: 2.64rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+label {
+    margin-top: 2.64rem;
+    text-transform: capitalize;
+    letter-spacing: 0.04rem;
+    padding-left: 0.84rem;
+
+    font-size: smaller;
+    color: hsla(191, 13%, 84%, 0.9);
+}
+
+input {
+    background: hsl(203, 10%, 33%);
+    color: #d0d9db;
+    outline: none;
+    border: none;
+
+    font-size: medium;
+
+    margin-top: 0.64rem;
+    padding: 0.96rem 0.84rem;
+    width: 100%;
+
+    border-radius: 1rem;
+}
+
+input::placeholder{
+    color: hsla(191, 13%, 84%, 0.6);
+}
+
+input:focus {
+    outline: 0.32rem solid hsl(203, 39%, 29%);
+}
+
+button {
+    display: flex;
+    align-self: flex-end;
+    width: fit-content;
+    margin-top: 0.88rem;
+    padding: 0.88rem 1.32rem;
+    /* margin-left: 0.84rem; */
+    letter-spacing: 0.04rem;
+    font-weight: 700;
+
+    background: hsl(203, 39%, 42%);
+    color: #d0d9db;
+
+    border-radius: 8px;
+    border: none;
+    /* outline: none; */
+    box-shadow: none;
+}
+
+button:hover {
+    cursor: pointer;
+    background: hsl(203, 39%, 37%);
+}
+
+button:focus {
+    outline: 0.32rem solid hsl(203, 39%, 29%);
+    background-color: hsl(203, 39%, 42%);
+}
+
+
+p {
+    background: hsl(203, 19%, 33%);
+
+    margin-top: 2.64rem;
+    padding: 0.32rem 0.64rem;
+    border-radius: 0.32rem;
+    text-align: center;
+    font-size: large;
+    word-wrap: normal;
 }
